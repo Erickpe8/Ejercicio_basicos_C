@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main () {
+	
+	//Declaramos variables
+	int edad; 
+	bool empleadoConfianza;
+	int empleadoConfianzaTemp;
+	const int largoCadena = 50;
+	char nombreCompleto[largoCadena];
+	float sueldo;
+	
+	//Solicitamos valores
+	printf ("Solicitamos tu nombre: \n");
+	scanf ("%[^\n]s", nombreCompleto);
+	printf ("Ingresa tu edad: \n");
+	scanf ("%d" , &edad);
+	printf ("Ahora dinos tu sueldo: \n");
+	scanf ("%f", &sueldo);
+	
+	printf ("¿Eres empleado de confianza? (1/0) ");
+	scanf ("%d", &empleadoConfianzaTemp);
+	empleadoConfianza = empleadoConfianzaTemp;
+	
+	//Imprimimos
+	printf("\nLa información brindada fue: ");
+	printf("\nNombre : %s", nombreCompleto);
+	
+	printf("\nEdad : %d", edad);
+	
+	printf("\nSueldo: %f.2", sueldo);
+	
+	printf("\nEmpleado de confianza %d", empleadoConfianza);
+	return 0;
+}
